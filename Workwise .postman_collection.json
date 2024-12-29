@@ -1,0 +1,687 @@
+{
+	"info": {
+		"_postman_id": "f03f4e9e-c95b-4c94-8d52-db9d6894616f",
+		"name": "Workwise ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33352585"
+	},
+	"item": [
+		{
+			"name": "https://pinpoint.idearise.co/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pinpoint.idearise.co/",
+					"protocol": "https",
+					"host": [
+						"pinpoint",
+						"idearise",
+						"co"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://pinpoint.idearise.co/api/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"shivangiagrahari2108@gmail.com\",\"password\":\"Shivangi@21\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://pinpoint.idearise.co/api/login",
+					"protocol": "https",
+					"host": [
+						"pinpoint",
+						"idearise",
+						"co"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				},
+				"description": "Generated from cURL: curl -L -X POST \"https://pinpoint.idearise.co/api/login\" \\\r\n-H \"Content-Type: application/json\" \\\r\n--data-raw '{\"username\":\"shivangiagrahari2108@gmail.com\",\"password\":\"Shivangi@21\"}'\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "dashboard",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "Authorization",
+						"value": "Token 4e21a1403f50ae5ef70e2a2ae4a64caa724358de"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "g_state={\"i_l\":0}; sessionid=45g9swhgaa0kblgxf19k1vv5s92s95vk; csrftoken=H0uhtFfDGYKGVNZsbCuv79VH1XcnKmJR"
+					},
+					{
+						"key": "Referer",
+						"value": "https://pinpoint.idearise.co/admin/dashboard"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					}
+				],
+				"url": {
+					"raw": "https://pinpoint.idearise.co/api/dashboard/",
+					"protocol": "https",
+					"host": [
+						"pinpoint",
+						"idearise",
+						"co"
+					],
+					"path": [
+						"api",
+						"dashboard",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl \"https://pinpoint.idearise.co/api/dashboard/\" \\\r\n  -H \"Accept: application/json, text/plain, */*\" \\\r\n  -H \"Accept-Language: en-US,en;q=0.9\" \\\r\n  -H \"Authorization: Token 4e21a1403f50ae5ef70e2a2ae4a64caa724358de\" \\\r\n  -H \"Connection: keep-alive\" \\\r\n  -H \"Cookie: g_state={\\\"i_l\\\":0}; sessionid=45g9swhgaa0kblgxf19k1vv5s92s95vk; csrftoken=H0uhtFfDGYKGVNZsbCuv79VH1XcnKmJR\" \\\r\n  -H \"Referer: https://pinpoint.idearise.co/admin/dashboard\" \\\r\n  -H \"Sec-Fetch-Dest: empty\" \\\r\n  -H \"Sec-Fetch-Mode: cors\" \\\r\n  -H \"Sec-Fetch-Site: same-origin\" \\\r\n  -H \"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36\" \\\r\n  -H \"sec-ch-ua: \\\"Google Chrome\\\";v=\\\"131\\\", \\\"Chromium\\\";v=\\\"131\\\", \\\"Not_A Brand\\\";v=\\\"24\\\"\" \\\r\n  -H \"sec-ch-ua-mobile: ?0\" \\\r\n  -H \"sec-ch-ua-platform: \\\"Windows\\\"\"\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "edit-company-details",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "Authorization",
+						"value": "Token 4e21a1403f50ae5ef70e2a2ae4a64caa724358de"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "g_state={\"i_l\":0}; sessionid=45g9swhgaa0kblgxf19k1vv5s92s95vk; csrftoken=H0uhtFfDGYKGVNZsbCuv79VH1XcnKmJR"
+					},
+					{
+						"key": "Origin",
+						"value": "https://pinpoint.idearise.co"
+					},
+					{
+						"key": "Referer",
+						"value": "https://pinpoint.idearise.co/admin/company-profile"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "logo",
+							"type": "file",
+							"src": "/path/to/logo.png"
+						},
+						{
+							"key": "website",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "industry",
+							"value": "It",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "DXC",
+							"type": "text"
+						},
+						{
+							"key": "locations",
+							"value": "[]",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://pinpoint.idearise.co/api/edit-company-details/",
+					"protocol": "https",
+					"host": [
+						"pinpoint",
+						"idearise",
+						"co"
+					],
+					"path": [
+						"api",
+						"edit-company-details",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl \"https://pinpoint.idearise.co/api/edit-company-details/\" \\\r\n  -H \"Accept: application/json, text/plain, */*\" \\\r\n  -H \"Accept-Language: en-US,en;q=0.9\" \\\r\n  -H \"Authorization: Token 4e21a1403f50ae5ef70e2a2ae4a64caa724358de\" \\\r\n  -H \"Connection: keep-alive\" \\\r\n  -H \"Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryF4i3fBZYJZjed3q2\" \\\r\n  -H \"Cookie: g_state={\\\"i_l\\\":0}; sessionid=45g9swhgaa0kblgxf19k1vv5s92s95vk; csrftoken=H0uhtFfDGYKGVNZsbCuv79VH1XcnKmJR\" \\\r\n  -H \"Origin: https://pinpoint.idearise.co\" \\\r\n  -H \"Referer: https://pinpoint.idearise.co/admin/company-profile\" \\\r\n  -H \"Sec-Fetch-Dest: empty\" \\\r\n  -H \"Sec-Fetch-Mode: cors\" \\\r\n  -H \"Sec-Fetch-Site: same-origin\" \\\r\n  -H \"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36\" \\\r\n  -H \"sec-ch-ua: \\\"Google Chrome\\\";v=\\\"131\\\", \\\"Chromium\\\";v=\\\"131\\\", \\\"Not_A Brand\\\";v=\\\"24\\\"\" \\\r\n  -H \"sec-ch-ua-mobile: ?0\" \\\r\n  -H \"sec-ch-ua-platform: \\\"Windows\\\"\" \\\r\n  --form \"logo=@/path/to/logo.png\" \\\r\n  --form \"website=\" \\\r\n  --form \"industry=It\" \\\r\n  --form \"name=DXC\" \\\r\n  --form \"locations=[]\"\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "attendance-summary",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "Authorization",
+						"value": "Token 4e21a1403f50ae5ef70e2a2ae4a64caa724358de"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Cookie",
+						"value": "g_state={\"i_l\":0}; sessionid=45g9swhgaa0kblgxf19k1vv5s92s95vk; csrftoken=H0uhtFfDGYKGVNZsbCuv79VH1XcnKmJR"
+					},
+					{
+						"key": "Origin",
+						"value": "https://pinpoint.idearise.co"
+					},
+					{
+						"key": "Referer",
+						"value": "https://pinpoint.idearise.co/admin/montly-report"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"year\":\"2024\",\"month\":\"12\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://pinpoint.idearise.co/api/attendance-summary/",
+					"protocol": "https",
+					"host": [
+						"pinpoint",
+						"idearise",
+						"co"
+					],
+					"path": [
+						"api",
+						"attendance-summary",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl \"https://pinpoint.idearise.co/api/attendance-summary/\" \\\r\n  -H \"Accept: application/json, text/plain, */*\" \\\r\n  -H \"Accept-Language: en-US,en;q=0.9\" \\\r\n  -H \"Authorization: Token 4e21a1403f50ae5ef70e2a2ae4a64caa724358de\" \\\r\n  -H \"Connection: keep-alive\" \\\r\n  -H \"Content-Type: application/json\" \\\r\n  -H \"Cookie: g_state={\\\"i_l\\\":0}; sessionid=45g9swhgaa0kblgxf19k1vv5s92s95vk; csrftoken=H0uhtFfDGYKGVNZsbCuv79VH1XcnKmJR\" \\\r\n  -H \"Origin: https://pinpoint.idearise.co\" \\\r\n  -H \"Referer: https://pinpoint.idearise.co/admin/montly-report\" \\\r\n  -H \"Sec-Fetch-Dest: empty\" \\\r\n  -H \"Sec-Fetch-Mode: cors\" \\\r\n  -H \"Sec-Fetch-Site: same-origin\" \\\r\n  -H \"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36\" \\\r\n  -H \"sec-ch-ua: \\\"Google Chrome\\\";v=\\\"131\\\", \\\"Chromium\\\";v=\\\"131\\\", \\\"Not_A Brand\\\";v=\\\"24\\\"\" \\\r\n  -H \"sec-ch-ua-mobile: ?0\" \\\r\n  -H \"sec-ch-ua-platform: \\\"Windows\\\"\" \\\r\n  --data-raw '{\"year\":\"2024\",\"month\":\"12\"}'\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "logged out",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "content-type",
+						"value": "text/plain;charset=UTF-8"
+					},
+					{
+						"key": "origin",
+						"value": "https://accounts.google.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "x-client-data",
+						"value": "CIW2yQEIpbbJAQipncoBCMaHywEIlaHLAQiKo8sBCIWgzQEI3dfOAQj6184BGPbJzQE="
+					},
+					{
+						"key": "x-goog-authuser",
+						"value": "0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[[[1,null,null,null,null,null,null,null,null,null,[null,null,null,null,\"en\",null,null,null,[[[\"Google Chrome\",\"131\"],[\"Chromium\",\"131\"],[\"Not_A Brand\",\"24\"]],0,\"Windows\",\"15.0.0\",\"x86\",\"\",\"131.0.6778.205\"],[4,0,0,0,0]]],1112,[[[\"1735462733633\",null,null,null,null,null,null,\"[[[\\\"fSUmGKrv2zlglVVnq7q+/w\\\"]\\\",12,0,null,\\\"426181317198-llu2ionrgv0kohv2in93tm73vjsbb5ec.apps.googleusercontent.com\\\",\\\"https://pinpoint.idearise.co\\\",[1],null,null,null,null,null,null,26,null,null,null,[1,2,1,null,2,1,1]]\\\",null,null,12,null,null,null,-19800,null,null,null,null,null,1]]],\"1735462743643\"]]",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://play.google.com/log?format=json&hasfast=true&authuser=0",
+					"protocol": "https",
+					"host": [
+						"play",
+						"google",
+						"com"
+					],
+					"path": [
+						"log"
+					],
+					"query": [
+						{
+							"key": "format",
+							"value": "json"
+						},
+						{
+							"key": "hasfast",
+							"value": "true"
+						},
+						{
+							"key": "authuser",
+							"value": "0"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl \"https://play.google.com/log?format=json&hasfast=true&authuser=0\" \\\r\n  -H \"accept: */*\" \\\r\n  -H \"accept-language: en-US,en;q=0.9\" \\\r\n  -H \"content-type: text/plain;charset=UTF-8\" \\\r\n  -H \"origin: https://accounts.google.com\" \\\r\n  -H \"priority: u=1, i\" \\\r\n  -H \"sec-ch-ua: \\\"Google Chrome\\\";v=\\\"131\\\", \\\"Chromium\\\";v=\\\"131\\\", \\\"Not_A Brand\\\";v=\\\"24\\\"\" \\\r\n  -H \"sec-ch-ua-mobile: ?0\" \\\r\n  -H \"sec-ch-ua-platform: \\\"Windows\\\"\" \\\r\n  -H \"sec-fetch-dest: empty\" \\\r\n  -H \"sec-fetch-mode: cors\" \\\r\n  -H \"sec-fetch-site: same-site\" \\\r\n  -H \"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36\" \\\r\n  -H \"x-client-data: CIW2yQEIpbbJAQipncoBCMaHywEIlaHLAQiKo8sBCIWgzQEI3dfOAQj6184BGPbJzQE=\" \\\r\n  -H \"x-goog-authuser: 0\" \\\r\n  --data-raw '[[[1,null,null,null,null,null,null,null,null,null,[null,null,null,null,\"en\",null,null,null,[[[\"Google Chrome\",\"131\"],[\"Chromium\",\"131\"],[\"Not_A Brand\",\"24\"]],0,\"Windows\",\"15.0.0\",\"x86\",\"\",\"131.0.6778.205\"],[4,0,0,0,0]]],1112,[[[\"1735462733633\",null,null,null,null,null,null,\"[[[\\\"fSUmGKrv2zlglVVnq7q+/w\\\"]\\\",12,0,null,\\\"426181317198-llu2ionrgv0kohv2in93tm73vjsbb5ec.apps.googleusercontent.com\\\",\\\"https://pinpoint.idearise.co\\\",[1],null,null,null,null,null,null,26,null,null,null,[1,2,1,null,2,1,1]]\\\",null,null,12,null,null,null,-19800,null,null,null,null,null,1]]],\"1735462743643\"]]'\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "users-list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "Authorization",
+						"value": "Token 4e21a1403f50ae5ef70e2a2ae4a64caa724358de"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "g_state={\"i_l\":0}; sessionid=45g9swhgaa0kblgxf19k1vv5s92s95vk; csrftoken=H0uhtFfDGYKGVNZsbCuv79VH1XcnKmJR"
+					},
+					{
+						"key": "Referer",
+						"value": "https://pinpoint.idearise.co/admin/users-list"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					}
+				],
+				"url": {
+					"raw": "https://pinpoint.idearise.co/api/users-list/",
+					"protocol": "https",
+					"host": [
+						"pinpoint",
+						"idearise",
+						"co"
+					],
+					"path": [
+						"api",
+						"users-list",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl \"https://pinpoint.idearise.co/api/users-list/\" \\\r\n  -H \"Accept: application/json, text/plain, */*\" \\\r\n  -H \"Accept-Language: en-US,en;q=0.9\" \\\r\n  -H \"Authorization: Token 4e21a1403f50ae5ef70e2a2ae4a64caa724358de\" \\\r\n  -H \"Connection: keep-alive\" \\\r\n  -H \"Cookie: g_state={\\\"i_l\\\":0}; sessionid=45g9swhgaa0kblgxf19k1vv5s92s95vk; csrftoken=H0uhtFfDGYKGVNZsbCuv79VH1XcnKmJR\" \\\r\n  -H \"Referer: https://pinpoint.idearise.co/admin/users-list\" \\\r\n  -H \"Sec-Fetch-Dest: empty\" \\\r\n  -H \"Sec-Fetch-Mode: cors\" \\\r\n  -H \"Sec-Fetch-Site: same-origin\" \\\r\n  -H \"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36\" \\\r\n  -H \"sec-ch-ua: \\\"Google Chrome\\\";v=\\\"131\\\", \\\"Chromium\\\";v=\\\"131\\\", \\\"Not_A Brand\\\";v=\\\"24\\\"\" \\\r\n  -H \"sec-ch-ua-mobile: ?0\" \\\r\n  -H \"sec-ch-ua-platform: \\\"Windows\\\"\"\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "api/login/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Cookie",
+						"value": "g_state={\"i_l\":0}; sessionid=45g9swhgaa0kblgxf19k1vv5s92s95vk; csrftoken=3wNUBCnHlzh8A1LbLq7RrrdpbFHKdezX"
+					},
+					{
+						"key": "Origin",
+						"value": "https://pinpoint.idearise.co"
+					},
+					{
+						"key": "Referer",
+						"value": "https://pinpoint.idearise.co/auth/login"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"shivangiagrahari2108@gmail.com\",\"password\":\"Shivangi@21\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://pinpoint.idearise.co/api/login/",
+					"protocol": "https",
+					"host": [
+						"pinpoint",
+						"idearise",
+						"co"
+					],
+					"path": [
+						"api",
+						"login",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl \"https://pinpoint.idearise.co/api/login/\" \\\r\n  -H \"Accept: application/json, text/plain, */*\" \\\r\n  -H \"Accept-Language: en-US,en;q=0.9\" \\\r\n  -H \"Connection: keep-alive\" \\\r\n  -H \"Content-Type: application/json\" \\\r\n  -H \"Cookie: g_state={\\\"i_l\\\":0}; sessionid=45g9swhgaa0kblgxf19k1vv5s92s95vk; csrftoken=3wNUBCnHlzh8A1LbLq7RrrdpbFHKdezX\" \\\r\n  -H \"Origin: https://pinpoint.idearise.co\" \\\r\n  -H \"Referer: https://pinpoint.idearise.co/auth/login\" \\\r\n  -H \"Sec-Fetch-Dest: empty\" \\\r\n  -H \"Sec-Fetch-Mode: cors\" \\\r\n  -H \"Sec-Fetch-Site: same-origin\" \\\r\n  -H \"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36\" \\\r\n  -H \"sec-ch-ua: \\\"Google Chrome\\\";v=\\\"131\\\", \\\"Chromium\\\";v=\\\"131\\\", \\\"Not_A Brand\\\";v=\\\"24\\\"\" \\\r\n  -H \"sec-ch-ua-mobile: ?0\" \\\r\n  -H \"sec-ch-ua-platform: \\\"Windows\\\"\" \\\r\n  --data-raw \"{\\\"username\\\":\\\"shivangiagrahari2108@gmail.com\\\",\\\"password\\\":\\\"Shivangi@21\\\"}\"\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "get-profile-info/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "Authorization",
+						"value": "Token 4e21a1403f50ae5ef70e2a2ae4a64caa724358de"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "g_state={\"i_l\":0}; sessionid=45g9swhgaa0kblgxf19k1vv5s92s95vk; csrftoken=XPdYptz33wQQyLedPpuv4MnVQdSaVkmd"
+					},
+					{
+						"key": "Referer",
+						"value": "https://pinpoint.idearise.co/admin/user-profile"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					}
+				],
+				"url": {
+					"raw": "https://pinpoint.idearise.co/api/get-profile-info/",
+					"protocol": "https",
+					"host": [
+						"pinpoint",
+						"idearise",
+						"co"
+					],
+					"path": [
+						"api",
+						"get-profile-info",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl \"https://pinpoint.idearise.co/api/get-profile-info/\" \\\r\n  -H \"Accept: application/json, text/plain, */*\" \\\r\n  -H \"Accept-Language: en-US,en;q=0.9\" \\\r\n  -H \"Authorization: Token 4e21a1403f50ae5ef70e2a2ae4a64caa724358de\" \\\r\n  -H \"Connection: keep-alive\" \\\r\n  -H \"Cookie: g_state={\\\"i_l\\\":0}; sessionid=45g9swhgaa0kblgxf19k1vv5s92s95vk; csrftoken=XPdYptz33wQQyLedPpuv4MnVQdSaVkmd\" \\\r\n  -H \"Referer: https://pinpoint.idearise.co/admin/user-profile\" \\\r\n  -H \"Sec-Fetch-Dest: empty\" \\\r\n  -H \"Sec-Fetch-Mode: cors\" \\\r\n  -H \"Sec-Fetch-Site: same-origin\" \\\r\n  -H \"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36\" \\\r\n  -H \"sec-ch-ua: \\\"Google Chrome\\\";v=\\\"131\\\", \\\"Chromium\\\";v=\\\"131\\\", \\\"Not_A Brand\\\";v=\\\"24\\\"\" \\\r\n  -H \"sec-ch-ua-mobile: ?0\" \\\r\n  -H \"sec-ch-ua-platform: \\\"Windows\\\"\"\r\n"
+			},
+			"response": []
+		}
+	]
+}
